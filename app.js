@@ -60,7 +60,7 @@ function input() {
     for (i = 0; i < x.length; i++) {
         x[i] = String(x[i] + '-RCM.png').toUpperCase()
         jQuery('.notation-translator').append(`
-            <img src="${x[i]}" class="step">
+            <img src="${x[i]}.png" class="step">
         `)
     }
 }
