@@ -1,0 +1,1924 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="SJS.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="SJS.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidenav">
+        <button type="menu" onclick="nav('beginners-method')">Beginner's Method</button>
+        <button type="menu" onclick="nav('advanced-method')">Advanced Method</button>
+        <button type="menu" onclick="nav('notation-translator')">Notation Translator</button>
+    </div>
+    <div class="main">
+        <div class="screen beginners-method">
+            <!--Step 1-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 1: How to solve the first layer edges of the rubik's cube</h1>
+                <p>
+                    The easiest step is solving the first layer edges of the Rubik's Cube. Choose one color you want to
+                    start
+                    with. In this beginner's tutorial we're going to start with the white face.
+                    <br><br>
+                    I suggest you try to solve the first face without reading these instructions, so you can feel the
+                    sense
+                    of
+                    accomplishment when you complete it all alone. This step is not so hard because you don't have to
+                    take
+                    care
+                    of so many solved cubelets yet.
+                    <br><br>
+                    You can determine where a piece comes according to the colour of the center pieces which never swap
+                    places.
+                    Every edge must fit to the side center piece too. See the attached image.
+                    <br><br>
+                    The idea is to put the first edge to the right spot, oriented correctly, then the second piece so
+                    you
+                    don't
+                    mess up the one you have already solved. When you solve the fourth you have to take care not to mess
+                    up
+                    the
+                    three solved pieces so it gets harder step by step.
+                </p>
+                <h1 class="heading">Some Example Moves:</h1>
+                <div class="steps col-lg-6">
+                    The most complicated case is when three edges are done and the last one is oriented wrong:<br>
+                    <img src="white-cross-example-1.png"><br>
+                    <div class="col-lg-2 F"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    Another tricky situation is when the last white edge is on the front face but you can't just simply
+                    move
+                    it
+                    to the top because it's oriented wrong. In this case use the following permutation to flip the
+                    piece.<br>
+                    <img src="white-cross-example-2.png"><br>
+                    <div class="col-lg-2 F-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                </div>
+                <br>
+                <div class="steps col-lg-6">
+                    Similar to the previous cases, sometimes you find the last edge in the second layer oriented
+                    wrong.<br>
+                    <img src="white-cross-example-3.png"><br>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+            </div>
+            <!--Step 2-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 2: How to solve the first layer corners of the rubik's cube</h1>
+                <p>
+                    Finishing the first layer of the Rubik's Cube is still relatively easy and it can be used to
+                    familiarize
+                    with the puzzle without reading the cheat sheet.
+                    <br>
+                    The second step of the beginner's Rubik's Cube tutorial doesn't require long algorithms. You just
+                    have
+                    to
+                    apply a couple of short permutations which are easy to understand and to memorize.
+                </p>
+                <h1 class="heading">Some Example Moves:</h1>
+                <div class="steps col-lg-6">
+                    White sticker facing to the right:<br>
+                    <img src="white-corner-example-1.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    White sticker in the front face:<br>
+                    <img src="white-corner-example-2.png"><br>
+                    <div class="col-lg-2 F"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                </div>
+                <br>
+                <div class="steps col-lg-6">
+                    White sticker at the bottom of the cube:<br>
+                    <img src="white-corner-example-3.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    When the white corner piece is in the white layer just in a wrong spot you first need to take it out
+                    to
+                    the
+                    bottom layer and do one of the previous moves:<br>
+                    <img src="white-corner-example-4.png"><br>
+                    <div class="col-lg-2 L"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 L-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                </div>
+            </div>
+            <!--Step 3-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 3: How to solve the second layer of the rubik's cube</h1>
+                <p>
+                    Until this point we could work intuitively without any algorithm to memorize, but in this stage when
+                    we're
+                    solving the second layer of the Rubik's Cube people usually get stuck because there are too many
+                    moves
+                    to
+                    foresee in order to complete this step.
+                    <br><br>
+                    You'll have to learn three algorithms which bring the edge piece to the second layer without messing
+                    up
+                    the
+                    white face which is already solved. Until this point we held the cube with the white center facing
+                    up,
+                    now
+                    turn it upside down to let you review the puzzle better.
+                </p>
+                <h1 class="heading">The right and left algorithms:</h1>
+                <div class="steps col-lg-6">
+                    <b>Right:</b><br>
+                    <img src="right-second-layer.svg"><br>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 F"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Left:</b><br>
+                    <img src="left-second-layer.svg"><br>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 L-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 L"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 F"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                </div>
+                <br>
+                <div class="steps col-lg-6">
+                    <b>Wrong Orientation:</b><br>
+                    <img src="wrong-orientation-right.svg"><br>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 F"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                </div>
+            </div>
+            <!--Step 4-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 4: Make a yellow cross on the top of the rubik's cube</h1>
+                <p>
+                    In this step you need to repeat the given algorithm until you can see the yellow cross on the top of
+                    the
+                    cube.
+                    <br><br>
+                    After you are done doign the algorithm once you need to turn your cube until you get the shape in
+                    the
+                    proper angle.
+                </p>
+                <h1 class="heading">The yellow cross algorithm:</h1>
+                <div class="col-lg-3"></div>
+                <div class="steps col-lg-6">
+                    <b>Algorithm:</b><br>
+                    <img src="yellow-cross.png" width="400px"><br>
+                    <div class="col-lg-2 F"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 F-prime"></div>
+                </div>
+            </div>
+            <!--Step 5-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 5: Swap yellow edges in the top layer</h1>
+                <p>
+                    In the previous step we created a yellow cross on the top of the Rubik's Cube but probably the
+                    yellow
+                    edges are not all fitting to the colors of the side center pieces. In this stage of the Rubik's Cube
+                    solution we have have to fix this by repositioning these cubelets.
+                </p>
+                <h1 class="heading">The Alogrithms to switch pieces:</h1>
+                <div class="steps col-lg-6">
+                    <b>Swithing Pieces Algorithm:</b><br>
+                    <img src="swap-edges-90.svg"><br>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Swithing Pieces Algorithm:</b><br>
+                    <img src="swap-edges-180.png"><br>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 Y"></div>
+                    <div class="col-lg-2 Y"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+            </div>
+            <!--Step 6-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 6: Position Yellow Corners</h1>
+                <p>
+                    We have almost finished solving the Rubik's Cube, only the yellow corners are left. In this step we
+                    just
+                    have to put them in the right spot, it doesn't matter if the orientation is wrong. We're going to
+                    take
+                    care about the orientation in the last step.
+                    <br><br>
+                    The algorithm given below will swap the <b>front-left</b>, <b>back-left</b>, and <b>back right</b>
+                    corners of the cube in a clockwise position <b style="color: red">Somethimes there are no correctly
+                        positioned cubelets so you have to keep doing this algorithm until a random cublet goes into
+                        position</b>
+                </p>
+                <h1 class="heading">The Alogrithms to switch pieces:</h1>
+                <div class="col-lg-3"></div>
+                <div class="steps col-lg-6">
+                    <b>Swithing Pieces Algorithm: <em style="color: red;">keep in mind that the solved cubelets should
+                            be
+                            the on the front-right of the cube when doing the algorithm</em></b><br>
+                    <img src="swap-yellow-corners.svg"><br>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 L-prime"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 L"></div>
+                </div>
+            </div>
+            <!--Step 7-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 7: Orient Yellow Corners</h1>
+                <p>
+                    This step has 7 posibilities and all of them are noted down below. This is the last step of solving
+                    a
+                    cube
+                    <br><br>
+                    You can also keep doing the algorithm <b>"R' D' R D"</b> till the yellow is facing up and then turn
+                    the
+                    top of your cube for fix another yellow
+                </p>
+                <h1 class="heading">The Alogrithms to orient the pieces:</h1>
+                <div class="steps col-lg-6">
+                    <b>Posibility 1:</b><br>
+                    <img src="orientation-possibility-1.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 2:</b><br>
+                    <img src="orientation-possibility-2.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U-prime"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 3:</b><br>
+                    <img src="orientation-possibility-3.png"><br>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 4:</b><br>
+                    <img src="orientation-possibility-4.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 5:</b><br>
+                    <img src="orientation-possibility-5.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 6:</b><br>
+                    <img src="orientation-possibility-6.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+                <div class="steps col-lg-6">
+                    <b>Posibility 7:</b><br>
+                    <img src="orientation-possibility-7.png"><br>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 R-prime"></div>
+                    <div class="col-lg-2 D-prime"></div>
+                    <div class="col-lg-2 R"></div>
+                    <div class="col-lg-2 D"></div>
+                    <div class="col-lg-2 U"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen advanced-method">
+            <!--Step 1-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 1: White Cross</h1>
+                <h1 class="heading">Some Example Moves:</h1>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 1:</b><br>
+                        <img src="white-cross-case-1.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 2:</b><br>
+                        <img src="white-cross-case-2.png"><br>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 3</b><br>
+                        <img src="white-cross-case-3.png"><br>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="D-RCM.png" class="step"><br>
+                            <b>D</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="D-RCM.png" class="step"><br>
+                            <b>D</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 4</b><br>
+                        <img src="white-cross-case-4.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="L-RCM.png" class="step"><br>
+                            <b>L</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="D-RCM.png" class="step"><br>
+                            <b>D</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Step 2-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 2: F2L</h1>
+                <p>
+                    In this step you have to solve the first two layers together. You can do this by first aligning the white cubelet and its edge in the top layer and inserting it in its place. This have about 40 algorithms  so dont try to memorise, there are 10 algorithms given below but just try to solve it on your own
+                </p>
+                <h1 class="heading">Algorithms:</h1>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 1:</b><br>
+                        <img src="F2L-case-1.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 2:</b><br>
+                        <img src="F2L-case-2.png"><br>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 3:</b><br>
+                        <img src="F2L-case-3.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 4:</b><br>
+                        <img src="F2L-case-4.png"><br>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 5:</b><br>
+                        <img src="F2L-case-5.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 6:</b><br>
+                        <img src="F2L-case-6.png"><br>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 7:</b><br>
+                        <img src="F2L-case-7.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 8:</b><br>
+                        <img src="F2L-case-8.png"><br>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 9:</b><br>
+                        <img src="F2L-case-9.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 10:</b><br>
+                        <img src="F2L-case-10.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Step 3-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 3: Orient of the Last Layer</h1>
+                <h1 class="heading">Algorithms:</h1>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 1:</b><br>
+                        <img src="yellow-side-possibility-1.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="Y-RCM.png" class="step"><br>
+                                <b>Y</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="Y-RCM.png" class="step"><br>
+                                <b>Y</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 2:</b><br>
+                        <img src="yellow-side-possibility-2.png"><br>
+
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 3</b><br>
+                        <img src="yellow-side-possibility-3.png"><br>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="Y-RCM.png" class="step"><br>
+                            <b>Y</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 4</b><br>
+                        <img src="yellow-side-possibility-4.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 5</b><br>
+                        <img src="yellow-side-possibility-5.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 6</b><br>
+                        <img src="yellow-side-possibility-6.png"><br>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="L-RCM.png" class="step"><br>
+                            <b>L</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="X-RCM.png" class="step"><br>
+                            <b>X</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="L'-RCM.png" class="step"><br>
+                            <b>L'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="X'-RCM.png" class="step"><br>
+                            <b>X'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 7</b><br>
+                        <img src="yellow-side-possibility-7.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 8</b><br>
+                        <img src="yellow-side-possibility-8.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 9</b><br>
+                        <img src="yellow-side-possibility-9.png"><br>
+                        <div class="col-lg-2">
+                            <img src="L-RCM.png" class="step"><br>
+                            <b>L</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="X-RCM.png" class="step"><br>
+                            <b>X</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="L'-RCM.png" class="step"><br>
+                            <b>L'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="X'-RCM.png" class="step"><br>
+                            <b>X'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F-RCM.png" class="step"><br>
+                            <b>F</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="F'-RCM.png" class="step"><br>
+                            <b>F'</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 10</b><br>
+                        <img src="yellow-side-possibility-10.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="D-RCM.png" class="step"><br>
+                            <b>D</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="D'-RCM.png" class="step"><br>
+                            <b>D'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Step 4-->
+            <div class="col-lg-12 step-RC">
+                <h1 class="heading">Step 4: Permulation of the Last Layer</h1>
+                <h1 class="heading">Algorithms:</h1>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 1:</b><br>
+                        <img src="LL-possibility-1.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 2:</b><br>
+                        <img src="LL-possibility-2.png"><br>
+                        <div class="col-lg-12 steps">
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F-RCM.png" class="step"><br>
+                                <b>F</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U'-RCM.png" class="step"><br>
+                                <b>U'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R-RCM.png" class="step"><br>
+                                <b>R</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="U-RCM.png" class="step"><br>
+                                <b>U</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="R'-RCM.png" class="step"><br>
+                                <b>R'</b>
+                            </div>
+                            <div class="col-lg-2">
+                                <img src="F'-RCM.png" class="step"><br>
+                                <b>F'</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 3</b><br>
+                        <img src="LL-possibility-3.png"><br>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 4</b><br>
+                        <img src="LL-possibility-4.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-12">
+                    <div class="steps col-lg-6">
+                        <b>Possibility 5</b><br>
+                        <img src="LL-possibility-5.png"><br>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R-RCM.png" class="step"><br>
+                            <b>R</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="R'-RCM.png" class="step"><br>
+                            <b>R'</b>
+                        </div>
+                    </div>
+                    <div class="steps col-lg-6">
+                        <b>Possibility 6</b><br>
+                        <img src="LL-possibility-6.png"><br>
+                        <div class="col-lg-2">
+                            <img src="M'-RCM.png" class="step"><br>
+                            <b>M'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M'-RCM.png" class="step"><br>
+                            <b>M'</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U-RCM.png" class="step"><br>
+                            <b>U</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="M-RCM.png" class="step"><br>
+                            <b>M</b>
+                        </div>
+                        <div class="col-lg-2">
+                            <img src="U'-RCM.png" class="step"><br>
+                            <b>U'</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen notation-translator">
+            <input type="text" placeholder="Steps" id="steps" class="form-control" onchange="input()">
+        </div>
+    </div>
+</body>
+
+</html>

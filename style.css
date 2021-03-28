@@ -1,0 +1,72 @@
+.step {
+    width: 50px;
+    border: 2px solid black;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.steps b {
+    padding: 0px 19.5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.steps {
+    overflow: hidden;
+    text-align: center;
+}
+
+.step-RC {
+    margin-bottom: 50px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav button {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav button:hover {
+    background-color: gray;
+    border-radius: none;
+}
+
+/* Style page content */
+.main {
+    margin-left: 260px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav button {
+        font-size: 18px;
+    }
+}
+
+.form-control {
+    height: 50;
+    font-size: 25px;
+}
